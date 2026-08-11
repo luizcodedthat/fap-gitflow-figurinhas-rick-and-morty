@@ -111,7 +111,7 @@ const App = {
             : "Abrir pacote aleatÃ³rio de figurinhas"
         ),
       ]),
-      state.abrindo && m("div.pacote-animando", m("div.pacote", "í³¦")),
+      state.abrindo && m("div.pacote-animando", m("div.pacote", "ðŸ“¦")),
       m("section.colecao", [
         m("h2", `Sua coleÃ§Ã£o (${state.figurinhas.length})`),
         state.figurinhas.length === 0 && !state.abrindo
