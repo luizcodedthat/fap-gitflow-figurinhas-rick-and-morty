@@ -16,11 +16,12 @@ async function carregarTotalPersonagens() {
 }
 
 function gerarIdsAleatorios(quantidade, max) {
-  const ids = [];
-  for (let i = 0; i < quantidade; i++) {
-    ids.push(Math.floor(Math.random() * max) + 1);
+  const ids = new Set();
+  while (ids.size < quantidade) {
+    const id = Math.floor(Math.random() * max) + 1;
+    ids.add(id);
   }
-  return ids;
+  return [...ids];
 }
 
 async function abrirPacote() {
