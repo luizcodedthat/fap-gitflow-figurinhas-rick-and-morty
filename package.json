@@ -1,0 +1,9 @@
+{
+  "name": "figurinhas-rick-and-morty",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Álbum de figurinhas com personagens de Rick and Morty, feito com Mithril.js",
+  "scripts": {
+    "dev": "npx serve -l 5500 ."
+  }
+}
